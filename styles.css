@@ -7,12 +7,65 @@
 
 body {
     font-family: sans-serif;
+    color: var(--quaternary)
 }
 
 nav img {
     height: 80px;
     width: auto;
 }
+
+.hero {
+    position: relative;
+
+}
+
+.hero-text {
+    top: 0;
+    left: 0;
+    z-index: 150;
+    height: 100%;
+    width: 100%;
+    padding-top: 25%;
+    padding-left: 15%;
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+}
+
+.hero-text  h1,
+.hero-text  p {
+    color: white;
+}
+
+.hero-text  h1 {
+    font-size: 4rem;
+}
+
+.hero-text  p {
+    font-size: 1.5rem;
+}
+
+.med {
+    color: var(--primary)
+}
+
+.haven {
+    color: var(--secondary)
+}
+
+.hero-overlay {
+    position: relative;
+    z-index: 100;
+    width: 80%;
+    background-color: white;
+    border-right: 30px solid var(--primary);
+    border-radius: 0% 50% 50% 0%;
+    overflow: hidden;
+    height: calc(100vh - 80px);
+    box-shadow: 30px 0px 0px var(--quaternary),
+                    60px 0px 0px var(--tertiary);
+}
+
 
 nav {
     z-index: 1000;
@@ -78,4 +131,101 @@ nav li:hover {
 
 .footer-links li {
     list-style-type: none;
+}
+
+section.services {
+    height: 100vh
+}
+
+div.services {
+    display: flex;
+    flex-direction: row;
+}
+
+.services .card {
+    flex: 1
+}
+
+.card {
+    margin: 3rem;
+    padding: 2rem;
+    height: 250px;
+    border-radius: 25px;
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+
+}
+
+.card-body h4{
+    text-align: center;
+}
+
+div.short {
+    width: 40px;
+    height: 1px;
+    background-color: var(--primary);
+    border: 3px solid var(--primary);
+    margin-bottom: 2rem;
+}
+
+section.partners {
+    height: 100vh;
+    position: relative;
+}
+
+div.partners {
+    height: 75vh;
+    width: 100vw;
+    transform: skew(5deg, 0deg) rotateZ(5deg);
+    background-color: #ddd;
+    margin-top: 15vh;
+}
+
+.partner-content {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+div.partner-row {
+    display: flex;
+    flex-direction: flex-row;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner-section {
+    border-right: 2px solid var(--quaternary);
+    padding: 2rem; margin: 3rem;
+    flex: 1;
+    max-width: 300px;
+}
+
+.partner-section:last-of-type {
+    border-right: 0px;
+}
+
+
+section.contact {
+    height: 40vh;
+    color: white;
+    background: var(--primary);
+    padding: 2rem;
+}
+
+.contact a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 2px solid white;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.white {
+    background-color: white !important;
+    border: 3px solid white !important;
 }

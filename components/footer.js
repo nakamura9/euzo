@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = (props) => {
     return (
         <footer>
-            <div class="footer-links">
+            <div className="footer-links">
                 <div></div>
                 <div>
                     <h4>Services</h4>
@@ -22,7 +22,7 @@ const Footer = (props) => {
                     </ul>
                 </div>
             </div>
-            <div class='footer-copyright'>MedHaven C. 2021 All rights Reserved </div>
+            <div className='footer-copyright'>MedHaven C. 2021 All rights Reserved </div>
         </footer>
     )
 }
